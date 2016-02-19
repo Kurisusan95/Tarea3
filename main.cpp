@@ -44,7 +44,6 @@ int main( int argc, char* args[] )
     Character* character = new Character(renderer);
     Character1* character1 = new Character1(renderer);
 
-    //Main Loop
     while(true)
     {
         while(SDL_PollEvent(&Event))

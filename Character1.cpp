@@ -45,33 +45,12 @@ Move* Character1::getMove(SDL_Renderer *renderer, string name, int sprite_amount
 
 Character1::~Character1()
 {
-    //dtor
+
 }
 
 void Character1::logic()
 {
     const Uint8* currentKeyStates = SDL_GetKeyboardState( NULL );
-
-//    if( currentKeyStates[ SDL_SCANCODE_P ] )
-//    {
-//        this->current_move = "idle";
-//        this->current_sprite = 0;
-//    }
-//    if( currentKeyStates[ SDL_SCANCODE_O ] )
-//    {
-//        this->current_move = "kick";
-//        this->current_sprite = 0;
-//    }
-//    if( currentKeyStates[ SDL_SCANCODE_I ] )
-//    {
-//        this->current_move = "punch";
-//        this->current_sprite = 0;
-//    }
-//    if( currentKeyStates[ SDL_SCANCODE_L ] )
-//    {
-//        this->current_move = "walk";
-//        this->current_sprite = 0;
-//    }
     if( currentKeyStates[ SDL_SCANCODE_U ] )
     {
         this->current_move = "sho";
